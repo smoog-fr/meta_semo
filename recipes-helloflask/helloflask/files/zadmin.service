@@ -1,0 +1,11 @@
+[Unit]
+Description=Zimmer Admin Service - Flask
+After=multi-user.target
+
+[Service]
+Type=simple
+WorkingDirectory=/usr/bin/zadmin/
+ExecStart=/usr/bin/python3 catseverywhere.py
+
+[Install]
+WantedBy=multi-user.target
